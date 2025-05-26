@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Entities">
+      <UniqueIdentifier>{6927dc29-03fb-4775-acf8-c45caeddde94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entities\Readers">
+      <UniqueIdentifier>{1764c778-30f3-4e56-bb3f-1fc80113d551}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ClassImpl">
+      <UniqueIdentifier>{50083d45-8f3d-4e7a-a596-d9405dab031e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ClassImpl\Entities">
+      <UniqueIdentifier>{fc56128f-548d-459a-8e57-30e754ef9bea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ClassImpl\Entities\Readers">
+      <UniqueIdentifier>{1bb955f0-1c6a-453d-a5b3-b0ea0bd392eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Managers">
+      <UniqueIdentifier>{3d3836f1-1062-4f72-9279-8471c48e7434}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ClassImpl\Managers">
+      <UniqueIdentifier>{a9a65e01-809c-4d09-933c-853f6d6dff15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entities\Libraries">
+      <UniqueIdentifier>{d202d08c-b618-4a80-95b2-094bb5364411}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utils">
+      <UniqueIdentifier>{086c182e-24b8-4a29-baf9-1eeb4e302aaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ClassImpl\Entities\Libraries">
+      <UniqueIdentifier>{4aa7a7c1-09d2-4df1-bee4-c582cdba6583}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ClassImpl\Utils">
+      <UniqueIdentifier>{ed6e4a80-b177-4357-af24-f13dec841975}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Exceptions">
+      <UniqueIdentifier>{c0325c88-6e22-48cb-9d10-71ff12f1cbb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ClassImpl\Exceptions">
+      <UniqueIdentifier>{aa366c0d-eebb-4217-86ad-529108c45863}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Reader.cpp">
+      <Filter>Source Files\ClassImpl\Entities\Readers</Filter>
+    </ClCompile>
+    <ClCompile Include="LibrarySystem.hpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LibrarySystem.cpp">
+      <Filter>Source Files\ClassImpl</Filter>
+    </ClCompile>
+    <ClCompile Include="LibraryManager.cpp">
+      <Filter>Source Files\ClassImpl\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="ReaderManager.cpp">
+      <Filter>Source Files\ClassImpl\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="LiteratureManager.cpp">
+      <Filter>Source Files\ClassImpl\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="LibrarianManager.cpp">
+      <Filter>Source Files\ClassImpl\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="IssuanceManager.cpp">
+      <Filter>Source Files\ClassImpl\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="ReaderCategory.cpp">
+      <Filter>Source Files\ClassImpl\Entities\Readers</Filter>
+    </ClCompile>
+    <ClCompile Include="ReaderCategoryManager.cpp">
+      <Filter>Source Files\ClassImpl\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Literature.cpp">
+      <Filter>Source Files\ClassImpl\Entities\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="Issuance.cpp">
+      <Filter>Source Files\ClassImpl\Entities\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="Librarian.cpp">
+      <Filter>Source Files\ClassImpl\Entities\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="Library.cpp">
+      <Filter>Source Files\ClassImpl\Entities\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="FileManager.cpp">
+      <Filter>Source Files\ClassImpl\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Date.cpp">
+      <Filter>Source Files\ClassImpl\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleUtils.cpp">
+      <Filter>Source Files\ClassImpl\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>Source Files\ClassImpl\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="StringUtils.cpp">
+      <Filter>Source Files\ClassImpl\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="UserManager.cpp">
+      <Filter>Source Files\ClassImpl</Filter>
+    </ClCompile>
+    <ClCompile Include="FileException.cpp">
+      <Filter>Source Files\ClassImpl\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityNotFoundException.hpp">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityNotFoundException.cpp">
+      <Filter>Source Files\ClassImpl\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="PersonInfo.cpp">
+      <Filter>Source Files\ClassImpl\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Subscription.cpp">
+      <Filter>Source Files\ClassImpl\Entities\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="SubscriptionManager.cpp">
+      <Filter>Source Files\ClassImpl\Managers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Reader.hpp">
+      <Filter>Header Files\Entities\Readers</Filter>
+    </ClInclude>
+    <ClInclude Include="LibraryManager.hpp">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="ReaderManager.hpp">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="LiteratureManager.hpp">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="LibrarianManager.hpp">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="IssuanceManager.hpp">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="ReaderCategory.hpp">
+      <Filter>Header Files\Entities\Readers</Filter>
+    </ClInclude>
+    <ClInclude Include="ReaderCategoryManager.hpp">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Issuance.hpp">
+      <Filter>Header Files\Entities\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="Librarian.hpp">
+      <Filter>Header Files\Entities\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="Library.hpp">
+      <Filter>Header Files\Entities\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="Literature.hpp">
+      <Filter>Header Files\Entities\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityObject.hpp">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="FileManager.hpp">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Serializable.hpp">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Date.hpp">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleUtils.hpp">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="User.hpp">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="UserManager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringUtils.hpp">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="FileException.hpp">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="PersonInfo.hpp">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Subscription.hpp">
+      <Filter>Header Files\Entities\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="SubscriptionManager.hpp">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
