@@ -48,7 +48,7 @@ void LibraryManager::loadLibraries() {
 		}
 	}
 
-	std::cout << "\x1B[32m" << _libraries.size() << " бібліотеки завантажено з файлу.\033[0m\t\t" << std::endl;
+	ConsoleUtils::printSuccess(std::to_string(_libraries.size()) + " бібліотеки завантажено з файлу.");
 
 	file.close();
 }

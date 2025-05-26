@@ -64,7 +64,7 @@ void LiteratureManager::loadLiterature() {
 		}
 	}
 
-	std::cout << "\x1B[32m" << _literature.size() << " літератури завантажено з файлу. \033[0m\t\t" << std::endl;
+	ConsoleUtils::printSuccess(std::to_string(_literature.size()) + " літератури завантажено з файлу.");
 
 	file.close();
 }

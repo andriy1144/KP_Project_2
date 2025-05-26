@@ -77,7 +77,7 @@ void ReaderManager::loadReaders() {
 		}
 	}
 
-	std::cout << "\x1B[32m" << _readers.size() << " читачів завантажено з файлу. \033[0m\t\t" << std::endl;
+	ConsoleUtils::printSuccess(std::to_string(_readers.size()) + " читачів завантажено з файлу.");
 	file.close();
 }
 
