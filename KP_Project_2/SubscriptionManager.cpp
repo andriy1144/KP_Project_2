@@ -130,9 +130,10 @@ bool SubscriptionManager::checkSubscriptionLimitValid(int bookCount, int subscri
 int SubscriptionManager::printSubscriptionMenu() {
 	if (_subscriptions.empty()) throw std::runtime_error("Абониментів немає.");
 
-	std::cout << "Доступні абонименти бібліотек:" << std::endl;
+	std::cout << "Доступні абонементи бібліотек:" << std::endl;
 	for (const auto& subscription : _subscriptions) {
-		std::cout << subscription->toString() << std::endl;
+		std::cout << subscription->toString();
+		ConsoleUtils::printDelimeter('-', 100);
 	}
 
 	int choice = ConsoleUtils::getInputInt("Введіть номер абонименту із верхнього списку: ");
@@ -149,7 +150,8 @@ int SubscriptionManager::printSubscriptionMenuByLibraryId(int libraryId) const {
 
 	std::cout << "Доступні абонименти вказаної бібліотеки:" << std::endl;
 	for (const auto& subscription : librarySubscriptions) {
-		std::cout << subscription->toString() << std::endl;
+		std::cout << subscription->toString();
+		ConsoleUtils::printDelimeter('-', 100);
 	}
 
 	int choice = ConsoleUtils::getInputInt("Введіть номер абонименту із верхнього списку: ");

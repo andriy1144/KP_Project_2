@@ -375,11 +375,11 @@ void LibrarySystem::readerCommands() {
 					const auto& readers = _readerManager->getReaders();
 					
 					if (readers.empty()) ConsoleUtils::printInfo("Читачів немає.");
-					else {
+					else {						
 						ConsoleUtils::printInfo("Доступні читачі:");
 						ConsoleUtils::printArrayFormatted(
 							std::vector<std::shared_ptr<EntityObject>>(readers.begin(), readers.end()),
-							'-', 100
+							'-', 150
 						);
 					}
 					break;
@@ -487,7 +487,7 @@ void LibrarySystem::literatureCommands() {
 					ConsoleUtils::printInfo("Доступна література:");
 					ConsoleUtils::printArrayFormatted(
 						std::vector<std::shared_ptr<EntityObject>>(literature.begin(), literature.end()),
-						'-', 100
+						'-', 150
 					);
 				}
 				break;
@@ -559,7 +559,7 @@ void LibrarySystem::libraryCommands() {
 					ConsoleUtils::printInfo("Доступні бібліотеки:");
 					ConsoleUtils::printArrayFormatted(
 						std::vector<std::shared_ptr<EntityObject>>(libraries.begin(), libraries.end()),
-						'-', 100
+						'-', 150
 					);
 				}
 				break;
@@ -643,7 +643,7 @@ void LibrarySystem::librarianCommands() {
 					ConsoleUtils::printInfo("Доступні бібліотекарі:");
 					ConsoleUtils::printArrayFormatted(
 						std::vector<std::shared_ptr<EntityObject>>(librarians.begin(), librarians.end()),
-						'-', 100
+						'-', 150
 					);
 				}
 				break;
@@ -734,7 +734,7 @@ void LibrarySystem::issuanceCommands() {
 					ConsoleUtils::printInfo("Список доступних видач:");
 					ConsoleUtils::printArrayFormatted(
 						std::vector<std::shared_ptr<EntityObject>>(issues.begin(), issues.end()),
-						'-', 100
+						'-', 150
 					);
 				}
 				break;
@@ -803,7 +803,7 @@ void LibrarySystem::subscriptionsCommands() {
 					ConsoleUtils::printInfo("Доступні абонименти:");
 					ConsoleUtils::printArrayFormatted(
 						std::vector<std::shared_ptr<EntityObject>>(subscriptions.begin(), subscriptions.end()),
-						'-', 100
+						'-', 150
 					);
 				}
 				break;
@@ -954,7 +954,7 @@ void LibrarySystem::proceedQueriesCommands() {
 					ConsoleUtils::printInfo("Відповідні читачі за вказаними атрибутами: ");
 					for (const auto& reader : result) {
 						std::cout << reader->toString();
-						ConsoleUtils::printDelimeter('=',150);
+						ConsoleUtils::printDelimeter('-',150);
 					}
 				}
 				break;
@@ -969,7 +969,7 @@ void LibrarySystem::proceedQueriesCommands() {
 					ConsoleUtils::printInfo("Читачі з літературою з ідентифікатором " + std::to_string(literatureId) + ": ");					
 					for (const auto& reader : result) {
 						std::cout << reader->toString();
-						ConsoleUtils::printDelimeter('=', 150);
+						ConsoleUtils::printDelimeter('-', 150);
 					}
 				}
 				break;
@@ -984,7 +984,7 @@ void LibrarySystem::proceedQueriesCommands() {
 					ConsoleUtils::printInfo("Читачі із зазначеним типом літератури: " + type);					
 					for (const auto& reader : result) {
 						std::cout << reader->toString();
-						ConsoleUtils::printDelimeter('=', 150);
+						ConsoleUtils::printDelimeter('-', 150);
 					}
 				}
 				break;
@@ -1005,7 +1005,7 @@ void LibrarySystem::proceedQueriesCommands() {
 						+ std::to_string(literatureId) + " у зазначений період: ");					
 					for (const auto& reader : result) {
 						std::cout << reader->toString();
-						ConsoleUtils::printDelimeter('=', 150);
+						ConsoleUtils::printDelimeter('-', 150);
 					}				
 				}
 				break;
@@ -1059,7 +1059,7 @@ void LibrarySystem::proceedQueriesCommands() {
 					ConsoleUtils::printInfo("Виданна література з полиці " + location + ": ");					
 					for (const auto& lit : result) {
 						std::cout << lit->toString();
-						ConsoleUtils::printDelimeter('=', 150);
+						ConsoleUtils::printDelimeter('-', 150);
 					}
 				}
 				break;
@@ -1081,7 +1081,7 @@ void LibrarySystem::proceedQueriesCommands() {
 						+ std::to_string(librarianId) + " у зазначений період: ");					
 					for (const auto& reader : result) {
 						std::cout << reader->toString();
-						ConsoleUtils::printDelimeter('=', 150);
+						ConsoleUtils::printDelimeter('-', 150);
 					}
 				}
 				break;
@@ -1107,7 +1107,7 @@ void LibrarySystem::proceedQueriesCommands() {
 					ConsoleUtils::printInfo("Читачі з простроченим терміном літератури:");					
 					for (const auto& reader : result) {
 						std::cout << reader->toString();
-						ConsoleUtils::printDelimeter('=', 150);
+						ConsoleUtils::printDelimeter('-', 150);
 					}
 				}
 				break;
@@ -1125,7 +1125,7 @@ void LibrarySystem::proceedQueriesCommands() {
 					ConsoleUtils::printInfo("Список літератури, яка надійшла(була списана) у зазначений період:");					
 					for (const auto& lit : result) {
 						std::cout << lit->toString();
-						ConsoleUtils::printDelimeter('=', 150);
+						ConsoleUtils::printDelimeter('-', 150);
 					}
 				}
 				break;
@@ -1143,7 +1143,7 @@ void LibrarySystem::proceedQueriesCommands() {
 					ConsoleUtils::printInfo("Бібліотекарі, які працюють в зазначеному залі: ");					
 					for (const auto& librarian : librarians) {
 						std::cout << librarian->toString();
-						ConsoleUtils::printDelimeter('=', 150);
+						ConsoleUtils::printDelimeter('-', 150);
 					}
 				}
 				break;
@@ -1160,7 +1160,7 @@ void LibrarySystem::proceedQueriesCommands() {
 					ConsoleUtils::printInfo("Читачі, які не відвідували бібліотеку в період:");					
 					for (const auto& reader : result) {
 						std::cout << reader->toString();
-						ConsoleUtils::printDelimeter('=', 150);
+						ConsoleUtils::printDelimeter('-', 150);
 					}
 				}
 				break;
@@ -1200,7 +1200,7 @@ void LibrarySystem::proceedQueriesCommands() {
 					ConsoleUtils::printInfo("Найпопулярніша література: ");					
 					for (const auto& lit : result) {
 						std::cout << lit->toString();
-						ConsoleUtils::printDelimeter('=', 150);
+						ConsoleUtils::printDelimeter('-', 150);
 					}
 				}
 				break;
@@ -1250,7 +1250,7 @@ void LibrarySystem::proceedUserCommands() {
 			}
 			case 2: {
 				std::shared_ptr<User> currentUser = _userManager->getCurrentUser();
-				std::cout << "\x1B[34m" << "Інформація про поточного користувача\n" << "\033[0m";
+				ConsoleUtils::printSuccess("Інформація про поточного користувача");
 				std::cout << currentUser->toString() << "\n";
 				break;
 			}
@@ -1294,7 +1294,7 @@ void LibrarySystem::run() {
 	while (true) {
 		std::cout << "=== Система керування бібліотечним фондом міста ===\n";
 		std::cout << " - \t1. Керування сутностями\n";
-		std::cout << " - \t2. Виконання запитів \x1B[34m (Admin) \033[0m\n";
+		std::cout << " - \t2. Виконання запитів \n";
 		std::cout << " - \t3. Керування користувачами \x1B[34m (Admin) \033[0m\n";
 		std::cout << " - \t4. очистити екран\n";
 		std::cout << " - \t0. вихід\n";

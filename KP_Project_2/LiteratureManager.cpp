@@ -133,7 +133,8 @@ int LiteratureManager::printLiteratureMenu() {
 
 	std::cout << "ћеню л≥тератури:" << std::endl;
 	for (const auto& lit : _literature) {
-		std::cout << lit->toString() << std::endl;
+		std::cout << lit->toString();
+		ConsoleUtils::printDelimeter('-', 150);
 	}
 
 	int id = ConsoleUtils::getInputInt("¬вед≥ть номер л≥тератури з верхнього списку:");

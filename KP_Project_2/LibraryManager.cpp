@@ -113,7 +113,8 @@ int LibraryManager::printLibraryMenu() {
 	
 	std::cout << "ћеню б≥бл≥отек: " << std::endl;
 	for (const auto& library : _libraries) {
-		std::cout << library->toString() << std::endl;
+		std::cout << library->toString();
+		ConsoleUtils::printDelimeter('-', 150);
 	}
 
 	int id = ConsoleUtils::getInputInt("¬вед≥ть номер б≥бл≥отеки з верхнього списку: ");

@@ -70,7 +70,8 @@ int IssuanceManager::printIssuesMenu() const {
 	std::cout << "ћеню видач: " << std::endl;
 	for (const auto& issue : _issues) {
 		if (issue->isReturned()) continue;
-		std::cout << issue->toString() << std::endl;
+		std::cout << issue->toString();
+		ConsoleUtils::printDelimeter('-', 150);
 	}
 
 	int id = ConsoleUtils::getInputInt("¬вед≥ть номер видач≥ з верхнього списку: ");

@@ -159,7 +159,8 @@ int ReaderManager::printReadersMenu() {
 	
 	std::cout << "Меню читачів: " << std::endl;
 	for (const auto& reader : _readers) {
-		std::cout << reader->toString() << std::endl;
+		std::cout << reader->toString();
+		ConsoleUtils::printDelimeter('-', 150);
 	}
 
 	int id = ConsoleUtils::getInputInt("Виберіть номер читача зі списку вгорі: ");

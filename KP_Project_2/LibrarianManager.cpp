@@ -120,7 +120,8 @@ int LibrarianManager::printLibrarianMenu() {
 
 	std::cout << "Меню бібліотекарів:\n";
 	for (const auto& librarian : _librarians) {
-		std::cout << librarian->toString() << std::endl;
+		std::cout << librarian->toString();
+		ConsoleUtils::printDelimeter('-', 150);
 	}
 
 	int id = ConsoleUtils::getInputInt("Виберіть ID бібліотекарів із верхнього списку:");
