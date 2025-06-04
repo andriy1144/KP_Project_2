@@ -712,7 +712,7 @@ void LibrarySystem::issuanceCommands() {
 					librarianId = _userManager->getCurrentLibrarianId();
 				}
 				else {
-					ConsoleUtils::printInfo("Виберіть бібліотекаря, який обслуговує читача:");
+					ConsoleUtils::printInfo("Виберіть бібліотекаря, який обслуговує читача: ");
 					librarianId = _librarianManager->printLibrarianMenu();
 				}
 

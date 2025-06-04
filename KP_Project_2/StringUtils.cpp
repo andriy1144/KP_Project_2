@@ -19,3 +19,12 @@ std::vector<std::string> StringUtils::split(const std::string& str, char delimit
     }
     return tokens;
 }
+
+bool StringUtils::hasSymbols(const std::string& str, const std::string& symbols) {
+    for (char c : str) {
+        if (symbols.find(c) != std::string::npos) {
+            return true;
+        }
+    }
+    return false;
+}

@@ -11,13 +11,24 @@ void ConsoleUtils::clearInputBuffer() {
 
 std::string ConsoleUtils::getInputString(const std::string& prompt) {
 	std::string input;
-	std::cout << prompt;
-	std::getline(std::cin, input);
-	while(StringUtils::trim(input).empty()) {
-		std::cout << "¬вед≥ть непорожн≥й р€док: ";
+	
+	do {
+		std::cout << prompt;
 		std::getline(std::cin, input);
-	}
-	return StringUtils::trim(input);
+		input = StringUtils::trim(input);
+
+		if (input.empty()) {
+			ConsoleUtils::printWarning("¬вед≥ть непорожн≥й р€док: ");
+		}
+		
+		if (StringUtils::hasSymbols(input, "|;:")) {
+			ConsoleUtils::printWarning("–€док не повинен м≥стити один ≥з цих символ≥в '|', ':', ';': ");
+		}
+
+	} while (input.empty()
+		|| StringUtils::hasSymbols(input, "|;:"));
+
+	return input;
 }
 
 int ConsoleUtils::getInputInt(const std::string& prompt) {

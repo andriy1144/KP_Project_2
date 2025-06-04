@@ -51,7 +51,6 @@ public:
 	void setEntryDate(const Date& entryDate);
 	void setArchiveDate(const Date& archiveDate);
 
-
     std::string serialize() const override;
 	std::string toString() const override;
 };
